@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
@@ -11,24 +12,17 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/avtovo"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:id="@+id/avtovo"/>
+            app:srcCompat="@drawable/avtovo_1" />
 
-        <ScrollView
-            android:id="@+id/scroll"
+        <ListView
+            android:id="@+id/listView"
             android:layout_width="match_parent"
-            android:layout_height="534dp">
+            android:layout_height="match_parent"/>
 
-            <TextView
-                android:id="@+id/textview"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:isScrollContainer="true" />
-        </ScrollView>
     </LinearLayout>
-
 </FrameLayout>
 
 

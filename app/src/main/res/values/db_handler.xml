@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <stations>
+        <station>
+            <name> Автово </name>
+            <date> 15 ноября 1955 года </date>
+            <depth> 12 метров </depth>
+            <architects> Е. А. Левинсон, А. А. Грушке </architects>
+        </station>
+
+        <station>
+            <name> Кировский завод </name>
+            <date> 15 ноября 1955 года </date>
+            <depth> ~ 50 метров</depth>
+            <architects> А. К. Андреев </architects>
+        </station>
+
+        <station>
+            <name> Адмиралтейская </name>
+            <date> 28 декабря 2011 года </date>
+            <depth> 86 м </depth>
+            <architects> А. С. Константинов </architects>
+        </station>
+
+        <station>
+            <name> Академическая </name>
+            <date> 31 декабря 1975 года </date>
+            <depth> ≈ 64 м </depth>
+            <architects> А. С. Гецкин, В. П. Шувалова, В. Г. Хильченко </architects>
+        </station>
+
+        <station>
+            <name> Балтийская </name>
+            <date> 15 ноября 1955 </date>
+            <depth> ≈ 40 м </depth>
+            <architects> М. К. Бенуа, А. И. Кубасов, Ф. Ф. Олейник </architects>
+        </station>
+
+        <station>
+            <name> Бухарестская </name>
+            <date> 28 декабря 2012 года </date>
+            <depth> 65 м </depth>
+            <architects> Д. А. Бойцов, О. В. Рязанцева, М. Ю. Мартынова </architects>
+        </station>
+
+        <station>
+            <name> Василеостровская </name>
+            <date> 3 ноября 1967 года </date>
+            <depth> ≈ 64 м </depth>
+            <architecs> А. Я. Мачерет, А. И. Прибульский, Л. С. Чупина </architecs>
+        </station>
+
+        <station>
+            <name> Владимирская </name>
+            <date> 15 ноября 1955 года </date>
+            <depth> ≈ 55 м </depth>
+            <architects> А. В. Жук, А. И. Прибульский, Г. И. Александров </architects>
+        </station>
+
+        <station>
+            <name> Волковская </name>
+            <date> 20 декабря 2008 года </date>
+            <depth> 61 м </depth>
+            <architects> ОАО НИПИИ «Ленметрогипротранс» </architects>
+        </station>
+
+        <station>
+            <name> Выборгская </name>
+            <date> 22 апреля 1975 </date>
+            <depth> ≈ 67 м </depth>
+            <architects> А. В. Жук, В. Ф. Дроздов, Е. А. Жук </architects>
+        </station>
+
+        <station>
+            <name> Горьковская </name>
+            <date> 1 июля 1963 года/26 декабря 2009 года (реконструкция) </date>
+            <depth>	≈ 53 м </depth>
+            <architects> С. И. Евдокимов, Н. И. Башнин, А. П. Изоитко, С. Л. Михайлов, Е. И. Травников </architects>
+        </station>
+
+        <station>
+            <name> Гостиный двор </name>
+            <date> 3 ноября 1967 года </date>
+            <depth> - </depth>
+            <architects> Валлен-Деламот, Жан-Батист-Мишель </architects>
+        </station>
+
+        <station>
+            <name> Гражданский проспект </name>
+            <date> 29 декабря 1978 года </date>
+            <depth>	≈ 64 м </depth>
+            <architects> А. С. Гецкин, Е. И. Валь, В. Н. Выдрин </architects>
+        </station>
+
+        <station>
+            <name> Девяткино </name>
+            <date> 29 декабря 1978 года </date>
+            <depth> - </depth>
+            <architects> А. С. Гецкин, К. Н. Афонская, И. Е. Сергеева, A. Н. Квятковский, Н. И. Згодько </architects>
+        </station>
+
+        <station>
+            <name> Достоевская </name>
+            <date> 30 декабря 1991 года </date>
+            <depth>	≈ 62 м </depth>
+            <architects> А. В. Жук, А. Д. Токмань </architects>
+        </station>
+
+        <station>
+            <name> Елизаровская </name>
+            <date> 21 декабря 1970 года </date>
+            <depth>	≈ 62 м </depth>
+            <architects> А. К. Комалдинов, И. И. Комалдинова </architects>
+        </station>
+
+        <station>
+            <name> Звёздная </name>
+            <date> 25 декабря 1972 года </date>
+            <depth>	≈ 22 м </depth>
+            <architects> Ю. В. Билинский, Г. А. Михайлов, Г. А. Шихалева </architects>
+        </station>
+
+        <station> Звенигородская
+            <date> 20 декабря 2008 </date>
+            <depth>	≈ 57 м </depth>
+            <architects> Н. В. Ромашкин-Тиманов, Ю. В. Еечко, Д. А. Бойцов, Н. А. Виноградова </architects>
+        </station>
+        <station>
+            <name> Комендантский проспект </name>
+            <date> 2 апреля 2005 года </date>
+            <depth> 75 м </depth>
+            <architects> А. С. Константинов, Н. В. Ромашкин-Тиманов, В. Г. Хильченко, Ю. Ю. Подервянская, Т. Р. Баранова, М. В. Павлова </architects>
+        </station>
+
+        <station>
+            <name> Крестовский остров </name>
+            <date> 3 сентября 1999 года </date>
+            <depth> ≈ 49 м </depth>
+            <architects> Е. М. Рапопорт, Г. А. Васильев </architects>
+        </station>
+
+        <station>
+            <name> Купчино </name>
+            <date> 25 декабря 1972 года </date>
+            <depth> - </depth>
+            <architects> К. Н. Афонская, А. С. Гецкин, И. Е. Сергеева, при участии С. С. Костенко </architects>
+        </station>
+
+        <station>
+            <name> Ладожская </name>
+            <date> 30 декабря 1985 года </date>
+            <depth>	≈ 61 м </depth>
+            <architects> В. Н. Есиновский, С. Н. Кривоносов, Л. А. Филиппова, Ю. А. Рыжов </architects>
+        </station>
+
+        <station>
+            <name> Ленинский проспект </name>
+            <date> 5 октября 1977 года </date>
+            <depth>	≈ 8 м </depth>
+            <architects>  	А. С. Гецкин, Е. И. Валь </architects>
+        </station>
+    </stations>
+</resources>
