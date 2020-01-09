@@ -37,6 +37,7 @@ class Info : AppCompatActivity() {
             val nList = doc.getElementsByTagName("station")
             for (i in 0 until nList.getLength()) {
                 if (nList.item(0).getNodeType().equals(Node.ELEMENT_NODE) ) {
+                    empList.clear()
                     //creating instance of HashMap to put the data of node value
                     empDataHashMap = HashMap()
                     val element = nList.item(i) as Element
@@ -46,10 +47,15 @@ class Info : AppCompatActivity() {
                     empDataHashMap.put("architects", getNodeValue("architects", element))
                     //adding the HashMap data to ArrayList
                     empList.add(empDataHashMap)
+
+
+                    val adapter = SimpleAdapter(this@Info, empList, R.layout.custom_list, arrayOf("name", "date", "depth", "architects"), intArrayOf(R.id.name, R.id.date, R.id.depth, R.id.architects))
+                    lv.setAdapter(adapter)
+
                 }
             }
-            val adapter = SimpleAdapter(this@Info, empList, R.layout.custom_list, arrayOf("name", "date", "depth", "architects"), intArrayOf(R.id.name, R.id.date, R.id.depth, R.id.architects))
-            lv.setAdapter(adapter)
+
+
         } catch (e: IOException) {
             e.printStackTrace()
         } catch (e: ParserConfigurationException) {
@@ -58,7 +64,14 @@ class Info : AppCompatActivity() {
             e.printStackTrace()
         }
 
+
+
+
+
+
     }
+
+
     // function to return node value
     protected fun getNodeValue(tag: String, element: Element): String {
         val nodeList = element.getElementsByTagName(tag)
@@ -74,6 +87,8 @@ class Info : AppCompatActivity() {
             }
         }
         return ""
+
+
     }
     }
 

@@ -125,6 +125,7 @@
             <depth>	≈ 57 м </depth>
             <architects> Н. В. Ромашкин-Тиманов, Ю. В. Еечко, Д. А. Бойцов, Н. А. Виноградова </architects>
         </station>
+
         <station>
             <name> Комендантский проспект </name>
             <date> 2 апреля 2005 года </date>
@@ -143,7 +144,7 @@
             <name> Купчино </name>
             <date> 25 декабря 1972 года </date>
             <depth> - </depth>
-            <architects> К. Н. Афонская, А. С. Гецкин, И. Е. Сергеева, при участии С. С. Костенко </architects>
+            <architects> К. Н. Афонская, А. С. Гецкин, И. Е. Сергеева, С. С. Костенко </architects>
         </station>
 
         <station>
@@ -159,5 +160,315 @@
             <depth>	≈ 8 м </depth>
             <architects>  	А. С. Гецкин, Е. И. Валь </architects>
         </station>
+
+        <station>
+            <name> Лесная </name>
+            <date> 22 апреля 1975 года </date>
+            <depth>	≈ 64 м </depth>
+            <architects> А. И. Прибульский, В. В. Ганкевич </architects>
+        </station>
+
+        <station>
+            <name> Лиговский проспект </name>
+            <date> 30 декабря 1991 года / 30 ноября 2014 года (реконструкция) </date>
+            <depth> ≈ 66 м </depth>
+            <architects> Ю. В. Еечко, Н. В. Ромашкин-Тиманов </architects>
+        </station>
+
+        <station>
+            <name> Ломоносовская </name>
+            <date> 21 декабря 1970 </date>
+            <depth> ≈ 65 м </depth>
+            <architects> А. Я. Мачерет, Л. С. Чупина </architects>
+        </station>
+
+        <station>
+            <name> Маяковская </name>
+            <date> 3 ноября 1967 года </date>
+            <depth>	≈ 51 м </depth>
+            <architects> Ю. В. Билинский, А. Д. Бочаров, Г. А. Михайлов </architects>
+        </station>
+
+        <station>
+            <name> Международная </name>
+            <date> 28 декабря 2012 года </date>
+            <depth>	65 м </depth>
+            <architects> Н. В. Ромашкин-Тиманов, Я. В. Романова, Н. А. Виноградова </architects>
+        </station>
+
+        <station>
+            <name> Московская </name>
+            <date> 25 декабря 1969 года </date>
+            <depth>	≈ 29 м </depth>
+            <architects> Н. В. Каменский, С. Г. Майофис </architects>
+        </station>
+
+        <station>
+            <name> Московские ворота </name>
+            <date> 29 апреля 1961 года </date>
+            <depth>	≈ 35 м </depth>
+            <architects> В. А. Петров, К. М. Митрофанов, А. И. Горицкий </architects>
+        </station>
+
+        <station>
+            <name> Нарвская </name>
+            <date> 15 ноября 1955 </date>
+            <depth>	≈ 50 м </depth>
+            <architects> А. В. Васильев, Д. С. Гольдгор, С. Б. Сперанский </architects>
+        </station>
+
+        <station>
+            <name> Невский проспект </name>
+            <date> 1 июля 1963 года </date>
+            <depth>	63 м </depth>
+            <architects> С. Г. Майофис </architects>
+        </station>
+
+        <station>
+            <name> Новочеркасская </name>
+            <date> 30 декабря 1985 года </date>
+            <depth>	≈ 61 м </depth>
+            <architects> В. Г. Хильченко, В. Г. Чехман, А. С. Гецкин </architects>
+        </station>
+
+        <station>
+            <name> Обводный канал </name>
+            <date> 30 декабря 2010 года </date>
+            <depth>	61 м </depth>
+            <architects> П. В. Малмалаев, Б. А. Подольский </architects>
+        </station>
+
+        <station>
+            <name> Обухово </name>
+            <date> 10 июля 1981 года </date>
+            <depth> ≈ 58 м </depth>
+            <architects> В. В. Попов, И. Н. Кусков, Л. М. Четыркин, И. Г. Лоханова, М. В. Меккель </architects>
+        </station>
+
+        <station>
+            <name> Озерки </name>
+            <date> 19 августа 1988 года </date>
+            <depth> ≈ 59 м </depth>
+            <architects> В. Ф. Дроздов, Г. Н. Булдаков, В. В. Попов, Л. М. Четыркин, И. Г. Лоханова </architects>
+        </station>
+
+        <station>
+            <name> Парк Победы </name>
+            <date> 29 апреля 1961 года </date>
+            <depth> 45 м </depth>
+            <architects> А. К. Андреев </architects>
+        </station>
+
+        <station>
+            <name> Парнас </name>
+            <date> 22 декабря 2006 года </date>
+            <depth> - </depth>
+            <architects> Н. В. Ромашкин-Тиманов, В. Г. Хильченко, М. В. Павлова </architects>
+        </station>
+
+        <station>
+            <name> Петроградская </name>
+            <date> 1 июля 1963 </date>
+            <depth>	≈ 53 м </depth>
+            <architects> В. Ф. Белов, А. В. Говорковский, В. Л. Ривин, Н. Н. Трегубов, Л. И. Шимаковский </architects>
+        </station>
+
+        <station>
+            <name> Пионерская </name>
+            <date> 6 ноября 1982 года </date>
+            <depth>	≈ 67 м </depth>
+            <architects> А. С. Гецкин, В. Г. Чехман </architects>
+        </station>
+
+        <station>
+            <name> Площадь Александра Невского 1 </name>
+            <date> 3 ноября 1967 года </date>
+            <depth> ≈ 54 м </depth>
+            <architects> Л. П. Лавров, Т. В. Шишкова, В. Г. Шишков </architects>
+        </station>
+
+        <station>
+            <name> Площадь Александра Невского 2 </name>
+            <date> 30 декабря 1985 года </date>
+            <depth>	≈ 60 м </depth>
+            <architects> Г. Н. Булдаков, В. Н. Щербин, А. П. Волкова </architects>
+        </station>
+
+        <station>
+            <name> Площадь Восстания </name>
+            <date> 15 ноября 1955 года </date>
+            <depth>	≈ 58 м </depth>
+            <architects>  Б. Н. Журавлёв, И. И. Фомин, В. В. Ганкевич </architects>
+        </station>
+
+        <station>
+            <name> Площадь Ленина </name>
+            <date> 1 июня 1958 года </date>
+            <depth>	71 м </depth>
+            <architects> А. К. Андреев </architects>
+        </station>
+
+        <station>
+            <name> Площадь Мужества </name>
+            <date> 31 декабря 1975 года </date>
+            <depth> ≈ 67 м </depth>
+            <architects> Л. Л. Шретер, Е. М. Рапопорт, А. Я. Свирский, Л. И. Шимаковский, П. И. Юшканцев </architects>
+        </station>
+
+        <station>
+            <name> Политехническая </name>
+            <date> 31 декабря 1975 года </date>
+            <depth> ≈ 65 м </depth>
+            <architects> С. Б. Сперанский, Н. В. Каменский, Л. Г. Бадалян </architects>
+        </station>
+
+        <station>
+            <name> Приморская </name>
+            <date> 28 сентября 1979 года </date>
+            <depth> 68 м (до уровня головки рельсов) </depth>
+            <architects> В. Н. Соколов, Н. И. Стародубов, В. А. Реппо </architects>
+        </station>
+
+        <station>
+            <name> Пролетарская </name>
+            <date> 10 июля 1981 года / 17 ноября 2006 года (реконструкция) </date>
+            <depth> 76 м </depth>
+            <architects> Д. С. Гольдгор, Ю. В. Еечко, Р. Ш. Розенталь, Н. А. Афошин </architects>
+        </station>
+
+        <station>
+            <name> Проспект Большевиков </name>
+            <date> 30 декабря 1985 </date>
+            <depth> ≈ 68 м </depth>
+            <architects> Ю. В. Еечко, Р. Ш. Розенталь </architects>
+        </station>
+
+        <station>
+            <name> Проспект Ветеранов </name>
+            <date> 5 октября 1977 года </date>
+            <depth>	≈ 8 м </depth>
+            <architects> В. Г. Хильченко </architects>
+        </station>
+
+        <station>
+            <name> Проспект Просвещения </name>
+            <date> 19 августа 1988 года </date>
+            <depth>	≈ 65 м </depth>
+            <architects> Ю. В. Еечко, В. Г. Чехман, В. Г. Хильченко </architects>
+        </station>
+
+        <station>
+            <name> Пушкинская </name>
+            <date> 30 апреля 1956 </date>
+            <depth> ≈ 57 м </depth>
+            <architects> Л. М. Поляков, В. А. Петров </architects>
+        </station>
+
+        <station>
+            <name> Рыбацкое </name>
+            <date> 28 декабря 1984 года </date>
+            <depth> - </depth>
+            <architects> А. С. Гецкин, Н. В. Ромашкин-Тиманов, К. Г. Леонтьев </architects>
+        </station>
+
+        <station>
+            <name> Садовая </name>
+            <date> 30 декабря 1991 года </date>
+            <depth>	71 м </depth>
+            <architects> А. И. Прибульский, Г. П. Кашихин, В. В. Попов, А. В. Гончаров </architects>
+        </station>
+
+        <station>
+            <name> Сенная площадь </name>
+            <date> 1 июля 1963 </date>
+            <depth>	≈ 55 м </depth>
+            <architects> А. И. Прибульский, А. Я. Мачерет, В. В. Ганкевич </architects>
+        </station>
+
+        <station>
+            <name> Спасская </name>
+            <date> 7 марта 2009 года </date>
+            <depth>	61 м </depth>
+            <architects> Е. М. Рапопорт, В. Н. Морозова, В. Г. Хозацкий </architects>
+        </station>
+
+        <station>
+            <name> Спортивная </name>
+            <date> 15 сентября 1997 года </date>
+            <depth>	64 м </depth>
+            <architects> А. С. Константинов, В. С. Волонсевич, О. А. Кузнецов </architects>
+        </station>
+
+        <station>
+            <name> Старая Деревня </name>
+            <date> 14 января 1999 </date>
+            <depth> ≈ 61 м </depth>
+            <architects> В. Н. Щербин, И. П. Макаюда </architects>
+        </station>
+
+        <station>
+            <name> Технологический институт 1 </name>
+            <date> 15 ноября 1955 </date>
+            <depth>	60 м </depth>
+            <architects> А. М. Соколов, А. К. Андреев </architects>
+        </station>
+
+        <station>
+            <name> Технологический институт 2 </name>
+            <date> 15 ноября 1955 </date>
+            <depth>	60 м </depth>
+            <architects> А. М. Соколов, А. К. Андреев </architects>
+        </station>
+
+        <station>
+            <name> Удельная </name>
+            <date> 6 ноября 1982 года </date>
+            <depth> ≈ 64 м </depth>
+            <architects> А. С. Гецкин, В. Г. Хильченко, В. Н. Выдрин </architects>
+        </station>
+
+        <station>
+            <name> Улица Дыбенко </name>
+            <date> 1 октября 1987 </date>
+            <depth>	≈ 65 м </depth>
+            <architects> О. Г. Кравцов, М. П. Антонов, Г. А. Васильев </architects>
+        </station>
+
+        <station>
+            <name> Фрунзенская </name>
+            <date> 29 апреля 1961 </date>
+            <depth>	≈ 39 м </depth>
+            <architects> Б. Н. Журавлёв </architects>
+        </station>
+
+        <station>
+            <name> Чёрная речка </name>
+            <date> 4 ноября 1982 года </date>
+            <depth>	≈ 67 м </depth>
+            <architects> Г. Н. Булдаков, В. Н. Щербин, А. П. Волкова </architects>
+        </station>
+
+        <station>
+            <name> Чернышевская </name>
+            <date> 1 сентября 1958 года </date>
+            <depth>	70 м </depth>
+            <architects> А. В. Жук, С. Г. Майофис </architects>
+        </station>
+
+        <station>
+            <name> Чкаловская </name>
+            <date> 15 сентября 1997 года </date>
+            <depth>	≈ 60 м </depth>
+            <architects> В. С. Волонсевич, А. С. Константинов </architects>
+        </station>
+
+        <station>
+            <name> Электросила </name>
+            <date> 29 апреля 1961 года </date>
+            <depth>	≈ 35 м </depth>
+            <architects> Г. М. Вланин, С. И. Евдокимов, Н. В. Устинович </architects>
+        </station>
+
+
     </stations>
 </resources>
