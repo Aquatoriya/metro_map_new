@@ -9,12 +9,18 @@ import android.graphics.Rect
 import android.os.Bundle
 import android.view.View
 
+
 class MainActivity : Activity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
         setContentView(DrawView(this))
     }
+
+
 
     internal inner class DrawView(context: Context) : View(context) {
 
@@ -26,339 +32,478 @@ class MainActivity : Activity() {
             rect = Rect()
         }
 
+
         override fun onDraw(canvas: Canvas) {
+
             // заливка канвы белым цветом
             canvas.drawARGB(0, 0, 0, 0)
 
 
             // толщина линии = 15
-            p.strokeWidth = 15f
-
-            // рисуем точку (50,50)
-            //canvas.drawPoint(50f, 50f, p)
-
-            // рисуем линию от (100,100) до (500,50)
-
-
+            p.strokeWidth = 10f
 
             //зеленаяая ветка
 
             p.color = Color.GREEN
 
-            canvas.drawCircle(50f, 250f, 10f, p)
+            canvas.drawCircle(25f, 125f, 10f, p)
 
-            canvas.drawLine(50f, 250f, 50f, 300f, p)
+            canvas.drawLine(25f, 125f, 25f, 150f, p)
 
-            canvas.drawCircle(50f, 300f, 10f, p)
+            canvas.drawCircle(25f, 150f, 10f, p)
 
-            canvas.drawLine(50f, 300f, 100f, 400f, p)
+            canvas.drawLine(25f, 150f, 53f, 200f, p)
 
-            canvas.drawCircle(100f, 400f, 10f, p)
+            canvas.drawCircle(53f, 200f, 10f, p)
 
-            canvas.drawLine(100f, 400f, 150f, 450f, p)
+            canvas.drawLine(53f, 200f, 75f, 225f, p)
 
-            canvas.drawCircle(150f, 450f, 10f, p)
+            canvas.drawCircle(75f, 225f, 10f, p)
 
-            canvas.drawLine(150f, 450f, 350f, 450f, p)
+            canvas.drawLine(75f, 225f, 175f, 250f, p)
 
-            canvas.drawCircle(350f, 450f, 10f, p)
+            canvas.drawCircle(175f, 250f, 10f, p)
 
-            canvas.drawLine(350f, 450f, 500f, 450f, p)
+            canvas.drawLine(175f, 250f, 250f, 250f, p)
 
-            canvas.drawCircle(500f, 450f, 10f, p)
+            canvas.drawCircle(250f, 250f, 10f, p)
 
-            canvas.drawLine(500f, 450f, 600f, 550f, p)
+            canvas.drawLine(250f, 250f, 350f, 275f, p)
 
-            canvas.drawCircle(600f, 550f, 10f, p)
+            canvas.drawCircle(350f, 275f, 10f, p)
 
-            canvas.drawLine(600f, 550f, 650f, 600f, p)
+            canvas.drawLine(350f, 275f, 375f, 300f, p)
 
-            canvas.drawCircle(650f, 600f, 10f, p)
+            canvas.drawCircle(375f, 300f, 10f, p)
 
-            canvas.drawLine(650f, 600f, 700f, 650f, p)
+            canvas.drawLine(375f, 300f, 400f, 325f, p)
 
-            canvas.drawCircle(700f, 650f, 10f, p)
+            canvas.drawCircle(400f, 325f, 10f, p)
 
-            canvas.drawLine(700f, 650f, 750f, 700f, p)
+            canvas.drawLine(400f, 325f, 425f, 350f, p)
 
-            canvas.drawCircle(750f, 700f, 10f, p)
+            canvas.drawCircle(425f, 350f, 10f, p)
 
-            canvas.drawLine(750f, 700f, 800f, 750f, p)
+            canvas.drawLine(425f, 350f, 450f, 375f, p)
 
-            canvas.drawCircle(800f, 750f, 10f, p)
+            canvas.drawCircle(450f, 375f, 10f, p)
 
-            canvas.drawLine(800f, 750f, 850f, 800f, p)
+            canvas.drawLine(450f, 375f, 475f, 400f, p)
 
-            canvas.drawCircle(850f, 800f, 10f, p)
-
-            canvas.drawLine(850f, 800f, 900f, 850f, p)
-
-            canvas.drawCircle(900f, 850f, 10f, p)
+            canvas.drawCircle(475f, 400f, 10f, p)
 
             //фиолетовая ветка
 
             p.color = Color.BLACK
 
-            canvas.drawCircle(150f, 200f, 10f, p)
+            canvas.drawCircle(75f, 100f, 10f, p)
 
-            canvas.drawLine(150f, 200f, 150f, 250f, p)
+            canvas.drawLine(75f, 100f, 75f, 125f, p)
 
-            canvas.drawCircle(150f, 250f, 10f, p)
+            canvas.drawCircle(75f, 125f, 10f, p)
 
-            canvas.drawLine(150f, 250f, 150f, 300f, p)
+            canvas.drawLine(75f, 125f, 75f, 150f, p)
 
-            canvas.drawCircle(150f, 300f, 10f, p)
+            canvas.drawCircle(75f, 150f, 10f, p)
 
-            canvas.drawLine(150f, 300f, 200f, 350f, p)
+            canvas.drawLine(75f, 150f, 75f, 175f, p)
 
-            canvas.drawCircle(200f, 350f, 10f, p)
+            canvas.drawCircle(75f, 175f, 10f, p)
 
-            canvas.drawLine(200f, 350f, 250f, 400f, p)
+            canvas.drawLine(75f, 175f, 75f, 200f, p)
+
+            canvas.drawCircle(75f, 200f, 10f, p)
+
+            canvas.drawLine(75f, 200f, 125f, 238f, p)
+
+            canvas.drawCircle(125f, 238f, 10f, p)
+
+            canvas.drawLine(125f, 238f, 175f, 275f, p)
+
+            canvas.drawCircle(175f, 275f, 10f, p)
+
+            canvas.drawLine(175f, 275f, 225f, 375f, p)
+
+            canvas.drawCircle(225f, 375f, 10f, p)
+
+            canvas.drawLine(225f, 375f, 250f, 400f, p)
 
             canvas.drawCircle(250f, 400f, 10f, p)
 
-            canvas.drawLine(250f, 400f, 200f, 450f, p)
+            canvas.drawLine(250f, 400f, 250f, 425f, p)
 
-            canvas.drawCircle(200f, 450f, 10f, p)
+            canvas.drawCircle(250f, 425f, 10f, p)
 
-            canvas.drawLine(200f, 450f, 300f, 500f, p)
+            canvas.drawLine(250f, 425f, 250f, 450f, p)
 
-            canvas.drawCircle(300f, 500f, 10f, p)
+            canvas.drawCircle(250f, 450f, 10f, p)
 
-            canvas.drawLine(300f, 500f, 350f, 550f, p)
+            canvas.drawLine(250f, 450f, 250f, 475f, p)
 
-            canvas.drawCircle(350f, 550f, 10f, p)
+            canvas.drawCircle(250f, 475f, 10f, p)
 
-            canvas.drawLine(350f, 550f, 400f, 700f, p)
+            canvas.drawLine(250f, 475f, 250f, 500f, p)
 
-            canvas.drawCircle(400f, 700f, 10f, p)
+            canvas.drawCircle(250f, 500f, 10f, p)
 
-            canvas.drawLine(400f, 700f, 500f, 800f, p)
+            canvas.drawLine(250f, 500f, 250f, 525f, p)
 
-            canvas.drawCircle(500f, 800f, 10f, p)
+            canvas.drawCircle(250f, 525f, 10f, p)
 
-            canvas.drawLine(500f, 800f, 500f, 850f, p)
+            canvas.drawLine(250f, 525f, 250f, 525f, p)
 
-            canvas.drawCircle(500f, 850f, 10f, p)
-
-            canvas.drawLine(500f, 850f, 500f, 900f, p)
-
-            canvas.drawCircle(500f, 900f, 10f, p)
-
-            canvas.drawLine(500f, 900f, 500f, 950f, p)
-
-            canvas.drawCircle(500f, 950f, 10f, p)
-
-            canvas.drawLine(500f, 950f, 500f, 1000f, p)
-
-            canvas.drawCircle(500f, 1000f, 10f, p)
-
-            canvas.drawLine(500f, 1000f, 500f, 1050f, p)
-
-            canvas.drawCircle(500f, 1050f, 10f, p)
-
-            canvas.drawLine(500f, 1050f, 500f, 1100f, p)
-
-            canvas.drawCircle(500f, 1100f, 10f, p)
+            canvas.drawCircle(250f, 525f, 10f, p)
 
             //синия ветка
 
             p.color = Color.BLUE
 
-            canvas.drawCircle(350f, 50f, 10f, p)
+            canvas.drawCircle(175f, 25f, 10f, p)
 
-            canvas.drawLine(350f, 50f, 350f, 100f, p)
+            canvas.drawLine(175f, 25f, 175f, 50f, p)
 
-            canvas.drawCircle(350f, 100f, 10f, p)
+            canvas.drawCircle(175f, 50f, 10f, p)
 
-            canvas.drawLine(350f, 100f, 350f, 150f, p)
+            canvas.drawLine(175f, 50f, 175f, 75f, p)
 
-            canvas.drawCircle(350f, 150f, 10f, p)
+            canvas.drawCircle(175f, 75f, 10f, p)
 
-            canvas.drawLine(350f, 150f, 350f, 200f, p)
+            canvas.drawLine(175f, 75f, 175f, 100f, p)
 
-            canvas.drawCircle(350f, 200f, 10f, p)
+            canvas.drawCircle(175f, 100f, 10f, p)
 
-            canvas.drawLine(350f, 200f, 350f, 250f, p)
+            canvas.drawLine(175f, 100f, 175f, 125f, p)
 
-            canvas.drawCircle(350f, 250f, 10f, p)
+            canvas.drawCircle(175f, 125f, 10f, p)
 
-            canvas.drawLine(350f, 250f, 350f, 300f, p)
+            canvas.drawLine(175f, 125f, 175f, 150f, p)
 
-            canvas.drawCircle(350f, 300f, 10f, p)
+            canvas.drawCircle(175f, 150f, 10f, p)
 
-            canvas.drawLine(350f, 300f, 350f, 400f, p)
+            canvas.drawLine(175f, 150f, 175f, 175f, p)
 
-            canvas.drawCircle(350f, 400f, 10f, p)
+            canvas.drawCircle(175f, 175f, 10f, p)
 
-            canvas.drawLine(350f, 400f, 350f, 450f, p)
+            canvas.drawLine(175f, 175f, 175f, 250f, p)
 
-            canvas.drawCircle(350f, 450f, 10f, p)
+            canvas.drawCircle(175f, 250f, 10f, p)
 
-            canvas.drawLine(350f, 450f, 350f, 500f, p)
+            canvas.drawLine(175f, 250f, 175f, 275f, p)
 
-            canvas.drawCircle(350f, 500f, 10f, p)
+            canvas.drawCircle(175f, 275f, 10f, p)
 
-            canvas.drawLine(350f, 500f, 350f, 650f, p)
+            canvas.drawLine(175f, 275f, 175f, 325f, p)
 
-            canvas.drawCircle(350f, 650f, 10f, p)
+            canvas.drawCircle(175f, 325f, 10f, p)
 
-            canvas.drawLine(350f, 650f, 350f, 700f, p)
+            canvas.drawLine(175f, 325f, 175f, 350f, p)
 
-            canvas.drawCircle(350f, 700f, 10f, p)
+            canvas.drawCircle(175f, 350f, 10f, p)
 
-            canvas.drawLine(350f, 700f, 350f, 750f, p)
+            canvas.drawLine(175f, 350f, 175f, 375f, p)
 
-            canvas.drawCircle(350f, 750f, 10f, p)
+            canvas.drawCircle(175f, 375f, 10f, p)
 
-            canvas.drawLine(350f, 750f, 350f, 800f, p)
+            canvas.drawLine(175f, 375f, 175f, 400f, p)
 
-            canvas.drawCircle(350f, 800f, 10f, p)
+            canvas.drawCircle(175f, 400f, 10f, p)
 
-            canvas.drawLine(350f, 800f, 350f, 850f, p)
+            canvas.drawLine(175f, 400f, 175f, 425f, p)
 
-            canvas.drawCircle(350f, 850f, 10f, p)
+            canvas.drawCircle(175f, 425f, 10f, p)
 
-            canvas.drawLine(350f, 850f, 350f, 900f, p)
+            canvas.drawLine(175f, 425f, 175f, 450f, p)
 
-            canvas.drawCircle(350f, 900f, 10f, p)
+            canvas.drawCircle(175f, 450f, 10f, p)
 
-            canvas.drawLine(350f, 900f, 350f, 950f, p)
+            canvas.drawLine(175f, 450f, 175f, 475f, p)
 
-            canvas.drawCircle(350f, 950f, 10f, p)
+            canvas.drawCircle(175f, 475f, 10f, p)
 
-            canvas.drawLine(350f, 950f, 350f, 1000f, p)
+            canvas.drawLine(175f, 475f, 175f, 500f, p)
 
-            canvas.drawCircle(350f, 1000f, 10f, p)
+            canvas.drawCircle(175f, 500f, 10f, p)
 
-            canvas.drawLine(350f, 1000f, 350f, 1050f, p)
+            canvas.drawLine(175f, 500f, 175f, 525f, p)
 
-            canvas.drawCircle(350f, 1050f, 10f, p)
+            canvas.drawCircle(175f, 525f, 10f, p)
 
             //красная ветка
 
             p.color = Color.RED
 
-            canvas.drawCircle(500f, 50f, 10f, p)
+            canvas.drawCircle(250f, 25f, 10f, p)
 
-            canvas.drawLine(500f, 50f, 500f, 100f, p)
+            canvas.drawLine(250f, 25f, 250f, 50f, p)
 
-            canvas.drawCircle(500f, 100f, 10f, p)
+            canvas.drawCircle(250f, 50f, 10f, p)
 
-            canvas.drawLine(500f, 100f, 500f, 150f, p)
+            canvas.drawLine(250f, 50f, 250f, 75f, p)
 
-            canvas.drawCircle(500f, 150f, 10f, p)
+            canvas.drawCircle(250f, 75f, 10f, p)
 
-            canvas.drawLine(500f, 150f, 500f, 200f, p)
+            canvas.drawLine(250f, 75f, 250f, 100f, p)
 
-            canvas.drawCircle(500f, 200f, 10f, p)
+            canvas.drawCircle(250f, 100f, 10f, p)
 
-            canvas.drawLine(500f, 200f, 500f, 250f, p)
+            canvas.drawLine(250f, 100f, 250f, 125f, p)
 
-            canvas.drawCircle(500f, 250f, 10f, p)
+            canvas.drawCircle(250f, 125f, 10f, p)
 
-            canvas.drawLine(500f, 250f, 500f, 300f, p)
+            canvas.drawLine(250f, 125f, 250f, 150f, p)
 
-            canvas.drawCircle(500f, 300f, 10f, p)
+            canvas.drawCircle(250f, 150f, 10f, p)
 
-            canvas.drawLine(500f, 300f, 500f, 350f, p)
+            canvas.drawLine(250f, 150f, 250f, 175f, p)
 
-            canvas.drawCircle(500f, 350f, 10f, p)
+            canvas.drawCircle(250f, 175f, 10f, p)
 
-            canvas.drawLine(500f, 350f, 500f, 400f, p)
+            canvas.drawLine(250f, 175f, 250f, 200f, p)
 
-            canvas.drawCircle(500f, 400f, 10f, p)
+            canvas.drawCircle(250f, 200f, 10f, p)
 
-            canvas.drawLine(500f, 400f, 500f, 450f, p)
+            canvas.drawLine(250f, 200f, 250f, 225f, p)
 
-            canvas.drawCircle(500f, 450f, 10f, p)
+            canvas.drawCircle(250f, 225f, 10f, p)
 
-            canvas.drawLine(500f, 450f, 500f, 500f, p)
+            canvas.drawLine(250f, 225f, 250f, 250f, p)
 
-            canvas.drawCircle(500f, 500f, 10f, p)
+            canvas.drawCircle(250f, 250f, 10f, p)
 
-            canvas.drawLine(500f, 500f, 500f, 650f, p)
+            canvas.drawLine(250f, 250f, 250f, 275f, p)
 
-            canvas.drawCircle(500f, 650f, 10f, p)
+            canvas.drawCircle(250f, 275f, 10f, p)
 
-            canvas.drawLine(500f, 650f, 400f, 750f, p)
+            canvas.drawLine(250f, 275f, 225f, 375f, p)
 
-            canvas.drawCircle(400f, 750f, 10f, p)
+            canvas.drawCircle(225f, 375f, 10f, p)
 
-            canvas.drawLine(400f, 750f, 350f, 750f, p)
+            canvas.drawLine(225f, 375f, 175f, 325f, p)
 
-            canvas.drawCircle(350f, 750f, 10f, p)
+            canvas.drawCircle(175f, 325f, 10f, p)
 
-            canvas.drawLine(350f, 750f, 200f, 800f, p)
+            canvas.drawLine(175f, 325f, 100f, 400f, p)
 
-            canvas.drawCircle(200f, 800f, 10f, p)
+            canvas.drawCircle(100f, 400f, 10f, p)
 
-            canvas.drawLine(200f, 800f, 200f, 850f, p)
+            canvas.drawLine(100f, 400f, 100f, 425f, p)
 
-            canvas.drawCircle(200f, 850f, 10f, p)
+            canvas.drawCircle(100f, 425f, 10f, p)
 
-            canvas.drawLine(200f, 850f, 200f, 900f, p)
+            canvas.drawLine(100f, 425f, 100f, 450f, p)
 
-            canvas.drawCircle(200f, 900f, 10f, p)
+            canvas.drawCircle(100f, 450f, 10f, p)
 
-            canvas.drawLine(200f, 900f, 200f, 950f, p)
+            canvas.drawLine(100f, 450f, 100f, 475f, p)
 
-            canvas.drawCircle(200f, 950f, 10f, p)
+            canvas.drawCircle(100f, 475f, 10f, p)
 
-            canvas.drawLine(200f, 950f, 200f, 1000f, p)
+            canvas.drawLine(100f, 475f, 100f, 500f, p)
 
-            canvas.drawCircle(200f, 1000f, 10f, p)
+            canvas.drawCircle(100f, 500f, 10f, p)
 
-            canvas.drawLine(200f, 1000f, 200f, 1050f, p)
+            canvas.drawLine(100f, 500f, 100f, 525f, p)
 
-            canvas.drawCircle(200f, 1050f, 10f, p)
+            canvas.drawCircle(100f, 525f, 10f, p)
 
             //желтая ветка
 
             p.color = Color.YELLOW
 
-            canvas.drawCircle(350f, 500f, 10f, p)
+            canvas.drawCircle(175f, 275f, 10f, p)
 
-            canvas.drawLine(350f, 500f, 500f, 500f, p)
+            canvas.drawLine(175f, 275f, 250f, 275f, p)
 
-            canvas.drawCircle(500f, 500f, 10f, p)
+            canvas.drawCircle(250f, 275f, 10f, p)
 
-            canvas.drawLine(500f, 500f, 600f, 500f, p)
+            canvas.drawLine(250f, 275f, 300f, 275f, p)
 
-            canvas.drawCircle(600f, 500f, 10f, p)
+            canvas.drawCircle(300f, 275f, 10f, p)
 
-            canvas.drawLine(600f, 500f, 550f, 450f, p)
+            canvas.drawLine(300f, 275f, 350f, 275f, p)
 
-            canvas.drawCircle(550f, 450f, 10f, p)
+            canvas.drawCircle(350f, 275f, 10f, p)
 
-            canvas.drawLine(550f, 450f, 600f, 500f, p)
+            canvas.drawLine(350f, 275f, 400f, 275f, p)
 
-            canvas.drawCircle(600f, 500f, 10f, p)
+            canvas.drawCircle(400f, 275f, 10f, p)
 
-            canvas.drawLine(600f, 500f, 650f, 550f, p)
+            canvas.drawLine(400f, 275f, 425f, 300f, p)
 
-            canvas.drawCircle(650f, 550f, 10f, p)
+            canvas.drawCircle(425f, 300f, 10f, p)
 
-            canvas.drawLine(650f, 550f, 700f, 600f, p)
+            canvas.drawLine(425f, 300f, 450f, 325f, p)
 
-            canvas.drawCircle(700f, 600f, 10f, p)
+            canvas.drawCircle(450f, 325f, 10f, p)
 
-            canvas.drawLine(700f, 600f, 750f, 650f, p)
+            canvas.drawLine(450f, 325f, 475f, 350f, p)
 
-            canvas.drawCircle(750f, 650f, 10f, p)
+            canvas.drawCircle(475f, 350f, 10f, p)
 
-            canvas.drawLine(750f, 650f, 800f, 700f, p)
 
-            canvas.drawCircle(800f, 700f, 10f, p)
-            // рисуем прямоугольник
-            // левая верхняя точка (200,150), нижняя правая (400,200)
-            //canvas.drawRect(200f, 150f, 400f, 200f, p)
 
-            // настройка объекта Rect
-            // левая верхняя точка (250,300), нижняя правая (350,500)
-            //rect.set(250, 300, 350, 500)
-            // рисуем прямоугольник из объекта rect
-            //canvas.drawRect(rect, p)
+            //кружочки белого цвета на каждой станции
+
+            p.color = Color.WHITE
+
+            //красная линия
+
+            canvas.drawCircle(250f, 25f, 8f, p) //Девяткино
+
+            canvas.drawCircle(250f, 50f, 8f, p) //Гражданский проспект
+
+            canvas.drawCircle(250f, 75f, 8f, p) //Академическая
+
+            canvas.drawCircle(250f, 100f, 8f, p) //Политехническая
+
+            canvas.drawCircle(250f, 125f, 8f, p) //Площадь Мужества
+
+            canvas.drawCircle(250f, 150f, 8f, p) //Лесная
+
+            canvas.drawCircle(250f, 175f, 8f, p) //Выборгская
+
+            canvas.drawCircle(250f, 200f, 8f, p) //Площадь Ленина
+
+            canvas.drawCircle(250f, 225f, 8f, p) //Чернышевская
+
+            canvas.drawCircle(250f, 250f, 8f, p) //Площадь Восстания
+
+            canvas.drawCircle(250f, 275f, 8f, p) //Владимирская
+
+            canvas.drawCircle(225f, 375f, 8f, p) //Пушкинская
+
+            canvas.drawCircle(175f, 375f, 8f, p) //Технологический институт 1
+
+            canvas.drawCircle(100f, 400f, 8f, p) //Балтийская
+
+            canvas.drawCircle(100f, 425f, 8f, p) //Нарвская
+
+            canvas.drawCircle(100f, 450f, 8f, p) //Кировский завод
+
+            canvas.drawCircle(100f, 475f, 8f, p) //Автово
+
+            canvas.drawCircle(100f, 500f, 8f, p) //Ленинский проспект
+
+            canvas.drawCircle(100f, 525f, 8f, p) //Проспект Ветеранов
+
+            //зеленая линия
+
+            canvas.drawCircle(25f, 125f, 8f, p) //Беговая
+
+            canvas.drawCircle(25f, 150f, 8f, p) //Новокрестовская
+
+            canvas.drawCircle(53f, 200f, 8f, p) //Приморская
+
+            canvas.drawCircle(75f, 225f, 8f, p) //Василеостровская
+
+            canvas.drawCircle(175f, 250f, 8f, p) //Гостинный двор
+
+            canvas.drawCircle(250f, 250f, 8f, p) //Маяковская
+
+            canvas.drawCircle(350f, 275f, 8f, p) //Площадь Александра Невского 1
+
+            canvas.drawCircle(375f, 300f, 8f, p) //Елизаровская
+
+            canvas.drawCircle(400f, 325f, 8f, p) //Ломоносовская
+
+            canvas.drawCircle(425f, 350f, 8f, p) //Пролетарская
+
+            canvas.drawCircle(450f, 375f, 8f, p) //Обухово
+
+            canvas.drawCircle(475f, 400f, 8f, p) //Рыбацкое
+
+            //синия ветка
+
+            canvas.drawCircle(175f, 25f, 8f, p)  //Парнас
+
+            canvas.drawCircle(175f, 50f, 8f, p) //Проспект ПРосвещения
+
+            canvas.drawCircle(175f, 75f, 8f, p) //Озерки
+
+            canvas.drawCircle(175f, 100f, 8f, p) //Удельная
+
+            canvas.drawCircle(175f, 125f, 8f, p) //Пионерская
+
+            canvas.drawCircle(175f, 150f, 8f, p) //Черная речка
+
+            canvas.drawCircle(175f, 175f, 8f, p) //Петроградская
+
+            canvas.drawCircle(175f, 250f, 8f, p) //Горьковская
+
+            canvas.drawCircle(175f, 275f, 8f, p) //Невский проспект
+
+            canvas.drawCircle(175f, 325f, 8f, p) //Сенная площадь
+
+            canvas.drawCircle(175f, 350f, 8f, p) //Технологический институт
+
+            canvas.drawCircle(175f, 375f, 8f, p) //Фрунзенская
+
+            canvas.drawCircle(175f, 400f, 8f, p) //Московские ворота
+
+            canvas.drawCircle(175f, 425f, 8f, p) //Электросила
+
+            canvas.drawCircle(175f, 450f, 8f, p) //Парк Победы
+
+            canvas.drawCircle(175f, 475f, 8f, p) //Московская
+
+            canvas.drawCircle(175f, 500f, 8f, p) //Звездная
+
+            canvas.drawCircle(175f, 525f, 8f, p) //Купчино
+
+
+            //желтая ветка
+
+            canvas.drawCircle(175f, 275f, 8f, p) //Спасская
+
+            canvas.drawCircle(250f, 275f, 8f, p) //Достоевская
+
+            canvas.drawCircle(300f, 275f, 8f, p) //Лиговский проспект
+
+            canvas.drawCircle(350f, 275f, 8f, p) //Площадь Александра Невского 2
+
+            canvas.drawCircle(400f, 275f, 8f, p) //Новочеркасская
+
+            canvas.drawCircle(425f, 300f, 8f, p) //Ладожская
+
+            canvas.drawCircle(450f, 325f, 8f, p) //ПРоспект Большевиков
+
+            canvas.drawCircle(475f, 350f, 8f, p) //Улица Дыбенко
+
+
+            //фиолетовая ветка
+
+            canvas.drawCircle(75f, 100f, 8f, p) //Комендантский проспект
+
+            canvas.drawCircle(75f, 125f, 8f, p) //Старая Деревня
+
+            canvas.drawCircle(75f, 150f, 8f, p) //Крестовский остров
+
+            canvas.drawCircle(75f, 175f, 8f, p) //Чкаловская
+
+            canvas.drawCircle(75f, 200f, 8f, p) //Спортивная
+
+            canvas.drawCircle(125f, 238f, 8f, p) //Адмиралтейская
+
+            canvas.drawCircle(175f, 275f, 8f, p) //Садовая
+
+            canvas.drawCircle(225f, 375f, 8f, p) //Звенигородская
+
+            canvas.drawCircle(250f, 400f, 8f, p) //Обводный канал
+
+            canvas.drawCircle(250f, 425f, 8f, p) //Волковская
+
+            canvas.drawCircle(250f, 450f, 8f, p) //Бухарестская
+
+            canvas.drawCircle(250f, 475f, 8f, p) //Международная
+
+            canvas.drawCircle(250f, 500f, 8f, p) //Проспект Славы
+
+            canvas.drawCircle(250f, 525f, 8f, p) //Дунайская
+
+            canvas.drawCircle(250f, 550f, 8f, p) //Шушары
+
+
+
         }
 
     }

@@ -7,6 +7,22 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:orientation="vertical">
+        <com.example.android.threepointscircle.DrawActivity.DrawView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/drawView"/>
 
+        <Button
+            android:id="@+id/button_id"
+            android:layout_height="8px"
+            android:layout_width="8px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="10px"/>
 
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
