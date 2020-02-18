@@ -122,11 +122,11 @@ class MainActivity : Activity() {
 
             canvas.drawCircle(175f, 275f, 10f, p)
 
-            canvas.drawLine(175f, 275f, 225f, 375f, p)
+            canvas.drawLine(175f, 275f, 200f, 325f, p)
 
-            canvas.drawCircle(225f, 375f, 10f, p)
+            canvas.drawCircle(200f, 325f, 10f, p)
 
-            canvas.drawLine(225f, 375f, 250f, 400f, p)
+            canvas.drawLine(200f, 325f, 250f, 400f, p)
 
             canvas.drawCircle(250f, 400f, 10f, p)
 
@@ -153,6 +153,10 @@ class MainActivity : Activity() {
             canvas.drawLine(250f, 525f, 250f, 525f, p)
 
             canvas.drawCircle(250f, 525f, 10f, p)
+
+            canvas.drawLine(250f, 525f, 250f, 550f, p)
+
+            canvas.drawCircle(250f, 550f, 10f, p)
 
             //синия ветка
 
@@ -274,11 +278,11 @@ class MainActivity : Activity() {
 
             canvas.drawCircle(250f, 275f, 10f, p)
 
-            canvas.drawLine(250f, 275f, 225f, 375f, p)
+            canvas.drawLine(250f, 275f, 200f, 325f, p)
 
-            canvas.drawCircle(225f, 375f, 10f, p)
+            canvas.drawCircle(200f, 325f, 10f, p)
 
-            canvas.drawLine(225f, 375f, 175f, 325f, p)
+            canvas.drawLine(200f, 325f, 175f, 325f, p)
 
             canvas.drawCircle(175f, 325f, 10f, p)
 
@@ -370,7 +374,7 @@ class MainActivity : Activity() {
 
             canvas.drawCircle(250f, 275f, 8f, p) //Владимирская
 
-            canvas.drawCircle(225f, 375f, 8f, p) //Пушкинская
+            canvas.drawCircle(200f, 325f, 8f, p) //Пушкинская
 
             canvas.drawCircle(175f, 375f, 8f, p) //Технологический институт 1
 
@@ -486,7 +490,7 @@ class MainActivity : Activity() {
 
             canvas.drawCircle(175f, 275f, 8f, p) //Садовая
 
-            canvas.drawCircle(225f, 375f, 8f, p) //Звенигородская
+            canvas.drawCircle(200f, 325f, 8f, p) //Звенигородская
 
             canvas.drawCircle(250f, 400f, 8f, p) //Обводный канал
 
