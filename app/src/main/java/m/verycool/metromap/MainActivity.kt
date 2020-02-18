@@ -114,11 +114,11 @@ class MainActivity : Activity() {
 
             canvas.drawCircle(75f, 200f, 10f, p)
 
-            canvas.drawLine(75f, 200f, 125f, 238f, p)
+            canvas.drawLine(75f, 200f, 125f, 220f, p)
 
-            canvas.drawCircle(125f, 238f, 10f, p)
+            canvas.drawCircle(125f, 220f, 10f, p)
 
-            canvas.drawLine(125f, 238f, 175f, 275f, p)
+            canvas.drawLine(125f, 220f, 175f, 275f, p)
 
             canvas.drawCircle(175f, 275f, 10f, p)
 
@@ -486,7 +486,7 @@ class MainActivity : Activity() {
 
             canvas.drawCircle(75f, 200f, 8f, p) //Спортивная
 
-            canvas.drawCircle(125f, 238f, 8f, p) //Адмиралтейская
+            canvas.drawCircle(125f, 220f, 8f, p) //Адмиралтейская
 
             canvas.drawCircle(175f, 275f, 8f, p) //Садовая
 
