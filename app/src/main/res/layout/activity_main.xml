@@ -12,17 +12,19 @@
         android:layout_height="match_parent"
         android:background="#FFF"
         android:orientation="vertical">
-        <com.example.android.threepointscircle.DrawActivity.DrawView
+
+        <view class="m.verycool.metromap.MainActivity$DrawView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/drawView"/>
 
         <Button
-            android:id="@+id/button_id"
-            android:layout_height="8px"
-            android:layout_width="8px"
-            android:layout_marginLeft="50px"
-            android:layout_marginTop="10px"/>
+            android:id="@+id/button"
+            android:layout_width="15px"
+            android:layout_height="15px"
+            android:layout_marginLeft="375px"
+            android:layout_marginTop="225px"
+            android:visibility="visible" />
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
