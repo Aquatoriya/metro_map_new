@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <stations>
-    <station>
+    <station id = "avtovo">
       <name> Автово </name>
       <date> 15 ноября 1955 года </date>
       <depth> 12 метров </depth>
@@ -445,7 +445,7 @@
       <architects> Б. Н. Журавлёв </architects>
     </station>
 
-    <station>
+    <station id = "chernaya_rechka">
       <name> Чёрная речка </name>
       <date> 4 ноября 1982 года </date>
       <depth>	≈ 67 м </depth>

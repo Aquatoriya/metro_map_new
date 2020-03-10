@@ -4,13 +4,10 @@ import android.os.Bundle
 import android.widget.ListView
 import android.widget.SimpleAdapter
 import androidx.appcompat.app.AppCompatActivity
-import m.verycool.metromap.ui.info.InfoFragment
 import org.w3c.dom.Element
 import org.w3c.dom.Node
-import org.xml.sax.SAXException
-import java.io.IOException
+import java.io.File
 import javax.xml.parsers.DocumentBuilderFactory
-import javax.xml.parsers.ParserConfigurationException
 
 
 class Info : AppCompatActivity() {
@@ -21,26 +18,19 @@ class Info : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.info_activity)
-        if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.container, InfoFragment.newInstance())
-                .commitNow()
-        }
 
-        try {
+
+        fun stationList(name: String) : Boolean {
             val lv = findViewById<ListView>(R.id.listView)
-            val istream = assets.open("db_handler.xml")
-            val builderFactory = DocumentBuilderFactory.newInstance()
-            val docBuilder = builderFactory.newDocumentBuilder()
-            val doc = docBuilder.parse(istream)
-            //reading the tag "employee" of empdetail file
-            val nList = doc.getElementsByTagName("station")
-            for (i in 0 until nList.getLength()) {
-                if (nList.item(0).getNodeType().equals(Node.ELEMENT_NODE) ) {
+            val xmlFile = File("db_handler.xml")
+            val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(xmlFile)
+            var list = doc.getElementsByTagName("station")
+            for (i in 0 until list.length) {
+                if (list.item(0).getNodeType().equals(Node.ELEMENT_NODE) ) {
                     empList.clear()
                     //creating instance of HashMap to put the data of node value
                     empDataHashMap = HashMap()
-                    val element = nList.item(i) as Element
+                    val element = list.item(i) as Element
                     empDataHashMap.put("name", getNodeValue("name", element))
                     empDataHashMap.put("date", getNodeValue("date", element))
                     empDataHashMap.put("depth", getNodeValue("depth", element))
@@ -49,22 +39,17 @@ class Info : AppCompatActivity() {
                     empList.add(empDataHashMap)
 
 
-                    val adapter = SimpleAdapter(this@Info, empList, R.layout.custom_list, arrayOf("name", "date", "depth", "architects"), intArrayOf(R.id.name, R.id.date, R.id.depth, R.id.architects))
+                    val adapter = SimpleAdapter(this@Info, empList, R.layout.info_activity, arrayOf("name", "date", "depth", "architects"), intArrayOf(R.id.name, R.id.date, R.id.depth, R.id.architects))
                     lv.setAdapter(adapter)
 
                 }
             }
-
-
-        } catch (e: IOException) {
-            e.printStackTrace()
-        } catch (e: ParserConfigurationException) {
-            e.printStackTrace()
-        } catch (e: SAXException) {
-            e.printStackTrace()
+            return false
         }
 
-
+        fun main(args: Array<String>) {
+            println(stationList("Автово"))
+        }
 
 
 
@@ -90,5 +75,7 @@ class Info : AppCompatActivity() {
 
 
     }
-    }
+}
+
+
 

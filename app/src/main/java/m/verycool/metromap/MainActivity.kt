@@ -22,6 +22,7 @@ class MainActivity : Activity() {
 
         setContentView(R.layout.activity_main)
 
+
         val button = findViewById<View>(R.id.button)
 
         button.setOnClickListener {
@@ -29,9 +30,6 @@ class MainActivity : Activity() {
             startActivity(intent);
         }
     }
-
-
-
 
 
 
@@ -52,6 +50,9 @@ class MainActivity : Activity() {
             // заливка канвы белым цветом
             canvas.drawARGB(0, 0, 0, 0)
 
+
+            //val bitmap = BitmapFactory.decodeStream(ByteArrayInputStream(byteArrayOf()))
+            //val canvas = Canvas(bitmap)
 
             // толщина линии = 15
             p.strokeWidth = 10f
@@ -428,7 +429,7 @@ class MainActivity : Activity() {
 
             //синия ветка
 
-            canvas.drawCircle(375f, 75f, 8f, p)  //Парнас
+            canvas.drawCircle(375f, 75f, 8f, p)  //Парнас; (375; 75)
 
             canvas.drawCircle(375f, 100f, 8f, p) //Проспект ПРосвещения
 
@@ -516,9 +517,18 @@ class MainActivity : Activity() {
 
             canvas.drawCircle(450f, 600f, 8f, p) //Шушары
 
-        }
+            //val drawable = BitmapDrawable(resources, bitmap)
 
+
+
+
+
+
+        }
 
     }
 
 }
+
+
+

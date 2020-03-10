@@ -13,10 +13,11 @@
         android:background="#FFF"
         android:orientation="vertical">
 
-        <view class="m.verycool.metromap.MainActivity$DrawView"
+        <view
+            android:id="@+id/drawView"
+            class="m.verycool.metromap.MainActivity$DrawView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/drawView"/>
+            android:layout_height="394dp" />
 
         <Button
             android:id="@+id/button"
@@ -24,7 +25,8 @@
             android:layout_height="15px"
             android:layout_marginLeft="375px"
             android:layout_marginTop="225px"
-            android:visibility="visible" />
+            android:visibility="visible"
+            android:background="#000"/>
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
