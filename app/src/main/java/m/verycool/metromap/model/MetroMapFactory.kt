@@ -6,13 +6,26 @@ import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 
-class MetroMapBitmapFactory {
+class MetroMapFactory {
+
+    private val metroStationList = listOf(
+        MetroStationPoint(225, 175, MetroBranch.GREEN, MetroTitle.Begovaya),
+        MetroStationPoint(225, 200, MetroBranch.GREEN, MetroTitle.Novokrestovskaya),
+        MetroStationPoint(675, 400, MetroBranch.GREEN, MetroTitle.Dybenko),
+        MetroStationPoint(375, 575, MetroBranch.BLUE, MetroTitle.Kupchino)
+    )
 
     private fun getPaint(color: Int): Paint {
         val paint = Paint()
         paint.color = color
         paint.strokeWidth = 10f
         return paint
+    }
+
+    private fun getMetroStation(title: MetroTitle) = metroStationList.find { it.title == title }!!
+
+    private fun MetroStationPoint.drawPoint(canvas: Canvas, paint: Paint) {
+        canvas.drawCircle(x.toFloat(), y.toFloat(), 8f, paint)
     }
 
     private fun buildGreenBranch(canvas: Canvas) {
@@ -66,9 +79,8 @@ class MetroMapBitmapFactory {
 
         paint.color = Color.WHITE
 
-        canvas.drawCircle(225f, 175f, 8f, paint) //Беговая
-
-        canvas.drawCircle(225f, 200f, 8f, paint) //Новокрестовская
+        getMetroStation(MetroTitle.Begovaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Novokrestovskaya).drawPoint(canvas, paint)
 
         canvas.drawCircle(253f, 250f, 8f, paint) //Приморская
 
@@ -416,7 +428,7 @@ class MetroMapBitmapFactory {
         canvas.drawCircle(300f, 575f, 8f, paint) //Проспект Ветеранов
     }
 
-    private fun buildOrangeBranch(canvas: Canvas)  {
+    private fun buildOrangeBranch(canvas: Canvas) {
         val paint = getPaint(Color.YELLOW)
 
         canvas.drawCircle(375f, 325f, 10f, paint)
@@ -469,7 +481,12 @@ class MetroMapBitmapFactory {
 
     }
 
-    fun build(context: Context): Bitmap {
+    fun build(context: Context): MetroMap {
+        val bitmap = buildMetroMapBitmap()
+        return MetroMap(bitmap, metroStationList)
+    }
+
+    private fun buildMetroMapBitmap(): Bitmap {
         val bitmap = Bitmap.createBitmap(700, 700, Bitmap.Config.RGB_565)
         val canvas = Canvas()
         canvas.setBitmap(bitmap)
@@ -481,4 +498,5 @@ class MetroMapBitmapFactory {
         buildOrangeBranch(canvas)
         return bitmap
     }
+
 }
