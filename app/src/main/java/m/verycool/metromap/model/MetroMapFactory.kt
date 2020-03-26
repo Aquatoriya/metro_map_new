@@ -11,8 +11,64 @@ class MetroMapFactory {
     private val metroStationList = listOf(
         MetroStationPoint(225, 175, MetroBranch.GREEN, MetroTitle.Begovaya),
         MetroStationPoint(225, 200, MetroBranch.GREEN, MetroTitle.Novokrestovskaya),
-        MetroStationPoint(675, 400, MetroBranch.GREEN, MetroTitle.Dybenko),
-        MetroStationPoint(375, 575, MetroBranch.BLUE, MetroTitle.Kupchino)
+        MetroStationPoint(253, 250, MetroBranch.GREEN, MetroTitle.Primorskaya),
+        MetroStationPoint(275, 275, MetroBranch.GREEN, MetroTitle.Vasileostrovskaya),
+        MetroStationPoint(375, 300, MetroBranch.GREEN, MetroTitle.Dvor),
+        MetroStationPoint(450, 300, MetroBranch.GREEN, MetroTitle.Mayakovskaya),
+        MetroStationPoint(550, 325, MetroBranch.GREEN, MetroTitle.AlexandraNevskogo_1),
+        MetroStationPoint(575, 350, MetroBranch.GREEN, MetroTitle.Elizarovskaya),
+        MetroStationPoint(600, 375, MetroBranch.GREEN, MetroTitle.Lomonosovskaya),
+        MetroStationPoint(625, 400, MetroBranch.GREEN, MetroTitle.Proletarskaya),
+        MetroStationPoint(650, 425, MetroBranch.GREEN, MetroTitle.Obuhovo),
+        MetroStationPoint(675, 450, MetroBranch.GREEN, MetroTitle.Rybatskoe),
+
+        MetroStationPoint(375, 325, MetroBranch.ORANGE, MetroTitle.Spasskaya),
+        MetroStationPoint(450, 325, MetroBranch.ORANGE, MetroTitle.Dostoevskaya),
+        MetroStationPoint(500, 325, MetroBranch.ORANGE, MetroTitle.Ligovskiy),
+        MetroStationPoint(550, 325, MetroBranch.ORANGE, MetroTitle.AlexandraNevskogo_2),
+        MetroStationPoint(600, 325, MetroBranch.ORANGE, MetroTitle.Novocherkasskaya),
+        MetroStationPoint(625, 350, MetroBranch.ORANGE, MetroTitle.Ladozhskaya),
+        MetroStationPoint(650, 375, MetroBranch.ORANGE, MetroTitle.Bolshevikov),
+        MetroStationPoint(675, 400, MetroBranch.ORANGE, MetroTitle.Dybenko),
+
+        MetroStationPoint(375, 75, MetroBranch.BLUE, MetroTitle.Parnas),
+        MetroStationPoint(375, 100, MetroBranch.BLUE, MetroTitle.Prosvechenia),
+        MetroStationPoint(375, 125, MetroBranch.BLUE, MetroTitle.Ozerki),
+        MetroStationPoint(375, 150, MetroBranch.BLUE, MetroTitle.Udelnaya),
+        MetroStationPoint(375, 175, MetroBranch.BLUE, MetroTitle.Pionerskaya),
+        MetroStationPoint(375, 200, MetroBranch.BLUE, MetroTitle.Rechka),
+        MetroStationPoint(375, 225, MetroBranch.BLUE, MetroTitle.Petrogradskaya),
+        MetroStationPoint(375, 300, MetroBranch.BLUE, MetroTitle.Gorkovskaya),
+        MetroStationPoint(375, 325, MetroBranch.BLUE, MetroTitle.Nevskiy),
+        MetroStationPoint(375, 375, MetroBranch.BLUE,MetroTitle.Sennaya),
+        MetroStationPoint(375, 400, MetroBranch.BLUE, MetroTitle.Institut),
+        MetroStationPoint(375, 425, MetroBranch.BLUE, MetroTitle.Frunzenskaya),
+        MetroStationPoint(375, 450, MetroBranch.BLUE, MetroTitle.MoskovskieVorota),
+        MetroStationPoint(375, 475, MetroBranch.BLUE, MetroTitle.Electrosila),
+        MetroStationPoint(375, 500, MetroBranch.BLUE, MetroTitle.ParkPobedy),
+        MetroStationPoint(375, 525, MetroBranch.BLUE, MetroTitle.Moskovskaya),
+        MetroStationPoint(375, 550, MetroBranch.BLUE, MetroTitle.Zvezdnaya),
+        MetroStationPoint(375, 575, MetroBranch.BLUE, MetroTitle.Kupchino),
+
+        MetroStationPoint(450, 75, MetroBranch.RED, MetroTitle.Devyatkino),
+        MetroStationPoint(450, 100, MetroBranch.RED,MetroTitle.GrazhdanskyProspect),
+        MetroStationPoint(450, 125, MetroBranch.RED,MetroTitle.Academicheskaya),
+        MetroStationPoint(450, 150, MetroBranch.RED,MetroTitle.Politech),
+        MetroStationPoint(450, 175, MetroBranch.RED,MetroTitle.Muzhestva),
+        MetroStationPoint(450, 200, MetroBranch.RED,MetroTitle.Lesnaya),
+        MetroStationPoint(450, 225, MetroBranch.RED,MetroTitle.Vyborgskaya),
+        MetroStationPoint(450, 250, MetroBranch.RED,MetroTitle.PloshadLenina),
+        MetroStationPoint(450, 275, MetroBranch.RED,MetroTitle.Chernishevskaya),
+        MetroStationPoint(450, 300, MetroBranch.RED,MetroTitle.Vosstaniya),
+        MetroStationPoint(450, 325, MetroBranch.RED,MetroTitle.Vladimirskaya),
+        MetroStationPoint(450, 375, MetroBranch.RED,MetroTitle.Pushkinskaya),
+        MetroStationPoint(450, 425, MetroBranch.RED,MetroTitle.Institut),
+        MetroStationPoint(450, 450, MetroBranch.RED,MetroTitle.Baltiyskaya),
+        MetroStationPoint(450, 475, MetroBranch.RED,MetroTitle.Narvskaya),
+        MetroStationPoint(450, 500, MetroBranch.RED,MetroTitle.Kirovskiy),
+        MetroStationPoint(450, 525, MetroBranch.RED,MetroTitle.Avtovo),
+        MetroStationPoint(450, 550, MetroBranch.RED,MetroTitle.Leninskiy),
+        MetroStationPoint(450, 575, MetroBranch.RED,MetroTitle.Veteranov)
     )
 
     private fun getPaint(color: Int): Paint {
@@ -81,26 +137,16 @@ class MetroMapFactory {
 
         getMetroStation(MetroTitle.Begovaya).drawPoint(canvas, paint)
         getMetroStation(MetroTitle.Novokrestovskaya).drawPoint(canvas, paint)
-
-        canvas.drawCircle(253f, 250f, 8f, paint) //Приморская
-
-        canvas.drawCircle(275f, 275f, 8f, paint) //Василеостровская
-
-        canvas.drawCircle(375f, 300f, 8f, paint) //Гостинный двор
-
-        canvas.drawCircle(450f, 300f, 8f, paint) //Маяковская
-
-        canvas.drawCircle(550f, 325f, 8f, paint) //Площадь Александра Невского 1
-
-        canvas.drawCircle(575f, 350f, 8f, paint) //Елизаровская
-
-        canvas.drawCircle(600f, 375f, 8f, paint) //Ломоносовская
-
-        canvas.drawCircle(625f, 400f, 8f, paint) //Пролетарская
-
-        canvas.drawCircle(650f, 425f, 8f, paint) //Обухово
-
-        canvas.drawCircle(675f, 450f, 8f, paint) //Рыбацкое
+        getMetroStation(MetroTitle.Primorskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Vasileostrovskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Dvor).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Mayakovskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.AlexandraNevskogo_1).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Elizarovskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Lomonosovskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Proletarskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Obuhovo).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Rybatskoe).drawPoint(canvas, paint)
     }
 
     private fun buildPurpleBranch(canvas: Canvas) {
@@ -272,41 +318,24 @@ class MetroMapFactory {
 
         paint.color = Color.WHITE
 
-        canvas.drawCircle(375f, 75f, 8f, paint)  //Парнас; (375; 75)
-
-        canvas.drawCircle(375f, 100f, 8f, paint) //Проспект ПРосвещения
-
-        canvas.drawCircle(375f, 125f, 8f, paint) //Озерки
-
-        canvas.drawCircle(375f, 150f, 8f, paint) //Удельная
-
-        canvas.drawCircle(375f, 175f, 8f, paint) //Пионерская
-
-        canvas.drawCircle(375f, 200f, 8f, paint) //Черная речка
-
-        canvas.drawCircle(375f, 225f, 8f, paint) //Петроградская
-
-        canvas.drawCircle(375f, 300f, 8f, paint) //Горьковская
-
-        canvas.drawCircle(375f, 325f, 8f, paint) //Невский проспект
-
-        canvas.drawCircle(375f, 375f, 8f, paint) //Сенная площадь
-
-        canvas.drawCircle(375f, 400f, 8f, paint) //Технологический институт
-
-        canvas.drawCircle(375f, 425f, 8f, paint) //Фрунзенская
-
-        canvas.drawCircle(375f, 450f, 8f, paint) //Московские ворота
-
-        canvas.drawCircle(375f, 475f, 8f, paint) //Электросила
-
-        canvas.drawCircle(375f, 500f, 8f, paint) //Парк Победы
-
-        canvas.drawCircle(375f, 525f, 8f, paint) //Московская
-
-        canvas.drawCircle(375f, 550f, 8f, paint) //Звездная
-
-        canvas.drawCircle(375f, 575f, 8f, paint) //Купчино
+        getMetroStation(MetroTitle.Parnas).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Prosvechenia).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Ozerki).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Udelnaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Pionerskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Rechka).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Petrogradskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Gorkovskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Nevskiy).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Sennaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Institut).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Frunzenskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.MoskovskieVorota).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Electrosila).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.ParkPobedy).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Moskovskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Zvezdnaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Kupchino).drawPoint(canvas, paint)
 
     }
 
@@ -389,43 +418,25 @@ class MetroMapFactory {
 
         paint.color = Color.WHITE
 
-        canvas.drawCircle(450f, 75f, 8f, paint) //Девяткино
-
-        canvas.drawCircle(450f, 100f, 8f, paint) //Гражданский проспект
-
-        canvas.drawCircle(450f, 125f, 8f, paint) //Академическая
-
-        canvas.drawCircle(450f, 150f, 8f, paint) //Политехническая
-
-        canvas.drawCircle(450f, 175f, 8f, paint) //Площадь Мужества
-
-        canvas.drawCircle(450f, 200f, 8f, paint) //Лесная
-
-        canvas.drawCircle(450f, 225f, 8f, paint) //Выборгская
-
-        canvas.drawCircle(450f, 250f, 8f, paint) //Площадь Ленина
-
-        canvas.drawCircle(450f, 275f, 8f, paint) //Чернышевская
-
-        canvas.drawCircle(450f, 300f, 8f, paint) //Площадь Восстания
-
-        canvas.drawCircle(450f, 325f, 8f, paint) //Владимирская
-
-        canvas.drawCircle(400f, 375f, 8f, paint) //Пушкинская
-
-        canvas.drawCircle(375f, 425f, 8f, paint) //Технологический институт 1
-
-        canvas.drawCircle(300f, 450f, 8f, paint) //Балтийская
-
-        canvas.drawCircle(300f, 475f, 8f, paint) //Нарвская
-
-        canvas.drawCircle(300f, 500f, 8f, paint) //Кировский завод
-
-        canvas.drawCircle(300f, 525f, 8f, paint) //Автово
-
-        canvas.drawCircle(300f, 550f, 8f, paint) //Ленинский проспект
-
-        canvas.drawCircle(300f, 575f, 8f, paint) //Проспект Ветеранов
+        getMetroStation(MetroTitle.Devyatkino).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.GrazhdanskyProspect).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Academicheskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Politech).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Muzhestva).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Lesnaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Vyborgskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.PloshadLenina).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Chernishevskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Vosstaniya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Vladimirskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Pushkinskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Institut).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Baltiyskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Narvskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Kirovskiy).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Avtovo).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Leninskiy).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Veteranov).drawPoint(canvas, paint)
     }
 
     private fun buildOrangeBranch(canvas: Canvas) {
@@ -463,21 +474,14 @@ class MetroMapFactory {
 
         paint.color = Color.WHITE
 
-        canvas.drawCircle(375f, 325f, 8f, paint) //Спасская
-
-        canvas.drawCircle(450f, 325f, 8f, paint) //Достоевская
-
-        canvas.drawCircle(500f, 325f, 8f, paint) //Лиговский проспект
-
-        canvas.drawCircle(550f, 325f, 8f, paint) //Площадь Александра Невского 2
-
-        canvas.drawCircle(600f, 325f, 8f, paint) //Новочеркасская
-
-        canvas.drawCircle(625f, 350f, 8f, paint) //Ладожская
-
-        canvas.drawCircle(650f, 375f, 8f, paint) //ПРоспект Большевиков
-
-        canvas.drawCircle(675f, 400f, 8f, paint) //Улица Дыбенко
+        getMetroStation(MetroTitle.Spasskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Dostoevskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Ligovskiy).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.AlexandraNevskogo_2).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Novocherkasskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Ladozhskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Bolshevikov).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Dybenko).drawPoint(canvas, paint)
 
     }
 
