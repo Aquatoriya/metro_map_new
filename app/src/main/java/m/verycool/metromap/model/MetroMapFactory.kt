@@ -68,7 +68,23 @@ class MetroMapFactory {
         MetroStationPoint(450, 500, MetroBranch.RED,MetroTitle.Kirovskiy),
         MetroStationPoint(450, 525, MetroBranch.RED,MetroTitle.Avtovo),
         MetroStationPoint(450, 550, MetroBranch.RED,MetroTitle.Leninskiy),
-        MetroStationPoint(450, 575, MetroBranch.RED,MetroTitle.Veteranov)
+        MetroStationPoint(450, 575, MetroBranch.RED,MetroTitle.Veteranov),
+
+        MetroStationPoint(275, 125, MetroBranch.PURPLE, MetroTitle.Komendantskiy),
+        MetroStationPoint(275, 150, MetroBranch.PURPLE, MetroTitle.StarayaDerevnya),
+        MetroStationPoint(275, 175, MetroBranch.PURPLE, MetroTitle.Krestovskiy),
+        MetroStationPoint(275, 200, MetroBranch.PURPLE, MetroTitle.Chkalovskaya),
+        MetroStationPoint(275, 225, MetroBranch.PURPLE, MetroTitle.Sportivnaya),
+        MetroStationPoint(325, 260, MetroBranch.PURPLE, MetroTitle.Admiralteyskaya),
+        MetroStationPoint(375, 325, MetroBranch.PURPLE, MetroTitle.Sadovaya),
+        MetroStationPoint(400, 375, MetroBranch.PURPLE, MetroTitle.Zvenigorodskaya),
+        MetroStationPoint(450, 450, MetroBranch.PURPLE, MetroTitle.Obvodniy),
+        MetroStationPoint(450, 475, MetroBranch.PURPLE, MetroTitle.Volkovskaya),
+        MetroStationPoint(450, 500, MetroBranch.PURPLE, MetroTitle.Buharestskaya),
+        MetroStationPoint(450, 525, MetroBranch.PURPLE, MetroTitle.Mezhdunarodnaya),
+        MetroStationPoint(450, 550, MetroBranch.PURPLE, MetroTitle.ProspectSlavi),
+        MetroStationPoint(450, 575, MetroBranch.PURPLE, MetroTitle.Dunayskaya),
+        MetroStationPoint(450, 600, MetroBranch.PURPLE, MetroTitle.Shushari)
     )
 
     private fun getPaint(color: Int): Paint {
@@ -212,35 +228,21 @@ class MetroMapFactory {
 
         paint.color = Color.WHITE
 
-        canvas.drawCircle(275f, 125f, 8f, paint) //Комендантский проспект
-
-        canvas.drawCircle(275f, 150f, 8f, paint) //Старая Деревня
-
-        canvas.drawCircle(275f, 175f, 8f, paint) //Крестовский остров
-
-        canvas.drawCircle(275f, 200f, 8f, paint) //Чкаловская
-
-        canvas.drawCircle(275f, 225f, 8f, paint) //Спортивная
-
-        canvas.drawCircle(325f, 260f, 8f, paint) //Адмиралтейская
-
-        canvas.drawCircle(375f, 325f, 8f, paint) //Садовая
-
-        canvas.drawCircle(400f, 375f, 8f, paint) //Звенигородская
-
-        canvas.drawCircle(450f, 450f, 8f, paint) //Обводный канал
-
-        canvas.drawCircle(450f, 475f, 8f, paint) //Волковская
-
-        canvas.drawCircle(450f, 500f, 8f, paint) //Бухарестская
-
-        canvas.drawCircle(450f, 525f, 8f, paint) //Международная
-
-        canvas.drawCircle(450f, 550f, 8f, paint) //Проспект Славы
-
-        canvas.drawCircle(450f, 575f, 8f, paint) //Дунайская
-
-        canvas.drawCircle(450f, 600f, 8f, paint) //Шушары
+        getMetroStation(MetroTitle.Komendantskiy).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.StarayaDerevnya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Krestovskiy).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Chkalovskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Sportivnaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Admiralteyskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Sadovaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Zvenigorodskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Obvodniy).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Volkovskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Buharestskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Mezhdunarodnaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.ProspectSlavi).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Dunayskaya).drawPoint(canvas, paint)
+        getMetroStation(MetroTitle.Shushari).drawPoint(canvas, paint)
     }
 
     private fun buildBlueBranch(canvas: Canvas) {
