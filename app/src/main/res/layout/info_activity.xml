@@ -12,12 +12,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/avtovo"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            app:srcCompat="@drawable/avtovo_1" />
-
         <ListView
             android:id="@+id/listView"
             android:layout_width="match_parent"
