@@ -334,7 +334,8 @@
     </station>
 
     <station>
-      <name> Московская </name>
+      <id> 36 </id>
+      <name> Московская</name>
       <date> 25 декабря 1969 года </date>
       <depth>	≈ 29 м </depth>
       <architects> Н. В. Каменский, С. Г. Майофис </architects>
@@ -349,6 +350,7 @@
     </station>
 
     <station>
+      <id> 33 </id>
       <name> Московские ворота </name>
       <date> 29 апреля 1961 года </date>
       <depth>	≈ 35 м </depth>
@@ -365,6 +367,7 @@
     </station>
 
     <station>
+      <id> 43 </id>
       <name> Нарвская </name>
       <date> 15 ноября 1955 </date>
       <depth>	≈ 50 м </depth>
