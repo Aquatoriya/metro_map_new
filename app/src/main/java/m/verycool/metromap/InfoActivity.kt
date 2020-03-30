@@ -1,15 +1,11 @@
 package m.verycool.metromap
 
 import android.os.Bundle
-import android.widget.ListView
-import android.widget.SimpleAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import m.verycool.metromap.model.MetroTitle
 import org.w3c.dom.Element
 import org.w3c.dom.Node
-import java.io.File
-import javax.xml.parsers.DocumentBuilderFactory
 
 
 class InfoActivity : AppCompatActivity() {
@@ -24,36 +20,36 @@ class InfoActivity : AppCompatActivity() {
         val stationTitle = intent.getSerializableExtra(MetroTitle::class.java.simpleName)
         Toast.makeText(this, stationTitle.toString(), Toast.LENGTH_LONG).show()
 
-        fun stationList(name: String) : Boolean {
-            val lv = findViewById<ListView>(R.id.listView)
-            val xmlFile = File("db_handler.xml")
-            val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(xmlFile)
-            var list = doc.getElementsByTagName("station")
-            for (i in 0 until list.length) {
-                if (list.item(0).getNodeType().equals(Node.ELEMENT_NODE) ) {
-                    empList.clear()
-                    //creating instance of HashMap to put the data of node value
-                    empDataHashMap = HashMap()
-                    val element = list.item(i) as Element
-                    empDataHashMap.put("id", getNodeValue("id", element))
-                    empDataHashMap.put("name", getNodeValue("name", element))
-                    empDataHashMap.put("date", getNodeValue("date", element))
-                    empDataHashMap.put("depth", getNodeValue("depth", element))
-                    empDataHashMap.put("architects", getNodeValue("architects", element))
-                    empDataHashMap.put("history", getNodeValue("history", element))
-                    //adding the HashMap data to ArrayList
-                    empList.add(empDataHashMap)
-
-
-                    val adapter = SimpleAdapter(this@InfoActivity, empList, R.layout.info_activity, arrayOf("id", "name", "date", "depth", "architects", "history"), intArrayOf(R.id.id, R.id.name, R.id.date, R.id.depth, R.id.architects, R.id.history))
-                    lv.setAdapter(adapter)
-
-                }
-            }
-            return false
-        }
-
+//        fun stationList(name: String) : Boolean {
+//            val lv = findViewById<ListView>(R.id.listView)
+//            val xmlFile = File("db_handler.xml")
+//            val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(xmlFile)
+//            var list = doc.getElementsByTagName("station")
+//            for (i in 0 until list.length) {
+//                if (list.item(0).getNodeType().equals(Node.ELEMENT_NODE) ) {
+//                    empList.clear()
+//                    //creating instance of HashMap to put the data of node value
+//                    empDataHashMap = HashMap()
+//                    val element = list.item(i) as Element
+//                    empDataHashMap.put("name", getNodeValue("name", element))
+//                    empDataHashMap.put("date", getNodeValue("date", element))
+//                    empDataHashMap.put("depth", getNodeValue("depth", element))
+//                    empDataHashMap.put("architects", getNodeValue("architects", element))
+//                    //adding the HashMap data to ArrayList
+//                    empList.add(empDataHashMap)
+//
+//
+//                    val adapter = SimpleAdapter(this@InfoActivity, empList, R.layout.info_activity, arrayOf("name", "date", "depth", "architects"), intArrayOf(R.id.name, R.id.date, R.id.depth, R.id.architects))
+//                    lv.setAdapter(adapter)
+//
+//                }
+//            }
+//            return false
+//        }
+//
     }
+
+
     // function to return node value
     protected fun getNodeValue(tag: String, element: Element): String {
         val nodeList = element.getElementsByTagName(tag)
@@ -72,6 +68,4 @@ class InfoActivity : AppCompatActivity() {
 
 
     }
-
-
 }
