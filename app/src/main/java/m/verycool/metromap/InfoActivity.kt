@@ -8,6 +8,8 @@ import org.w3c.dom.Element
 import org.w3c.dom.Node
 
 
+
+
 class InfoActivity : AppCompatActivity() {
 
     var empDataHashMap = HashMap<String, String>()
@@ -19,6 +21,7 @@ class InfoActivity : AppCompatActivity() {
 
         val stationTitle = intent.getSerializableExtra(MetroTitle::class.java.simpleName)
         Toast.makeText(this, stationTitle.toString(), Toast.LENGTH_LONG).show()
+
 
 //        fun stationList(name: String) : Boolean {
 //            val lv = findViewById<ListView>(R.id.listView)
