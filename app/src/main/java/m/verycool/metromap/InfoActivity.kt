@@ -30,7 +30,7 @@ class InfoActivity : AppCompatActivity() {
 
         fun main(args: Array<String>) {
             val xlmFile: File =
-                File("C:\\Users\\User\\AndroidStudioProjects\\MetroMap\\app\\src\\main\\res\\layout\\db_handler.xml")
+                File("db_handler.xml")
             val xmlDoc: Document =
                 DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(xlmFile)
 
